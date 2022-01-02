@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <input class="burger" type="checkbox">
+        <div id="gauche"><img src="img/logo.png" alt="logo"></div>
+        <div id="droite">
+            <ul>
+                <li class="policeA"><a href="#body">Acceuil</a></li>
+                <li class="policeA"><a href="#produits">Nos produits</a></li>
+                <li class="policeA"><a href="#propos">À propos de nous</a></li>
+                <li class="policeA"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="corps">
+        <div id="transparent">
+            <div id="bienvenue">
+                <h1 class="policeA">Bienvenue chez nous</h1>
+                <h3 class="policeA">Pour vous fournir le meilleur</h3>
+            </div>
+        </div>
+        <div id="produits" class="blanc">
+            <h1 class="policeA">Les produits qu'il vous faut</h1>
+            <h2 class="policeB">Ce que nous proposons</h2>
+            <div id="produits_souscat">
+                <div class="produit">
+                    <img src="img/produitA.png" alt="produitA">
+                    <p class="policeA">Oeuf plein air, 12</p>
+                    <p class="policeB">Rien que le meilleur</p>
+                </div>
+                <div class="produit">
+                    <img src="img/produitB.png" alt="produitB">
+                    <p class="policeA">Oeuf de poule en liberté</p>
+                    <p class="policeB">Tout ce dont vous avez besoin</p>
+                </div>
+                <div class="produit">
+                    <img src="img/produitC.png" alt="produitC">
+                    <p class="policeA">Oeuf extras frais, gros</p>
+                    <p class="policeB">Pour garder la santé</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="propos" class="blanc">
+        <div id="propos_gauche"><img src="img/propos.png" alt="oeufs"></div>
+        <div id="propos_droite">
+            <h1 class="policeA">À propos de coco</h1>
+            <p>Depuis 2 000, l'équipe dévouée de professionnels de Coco a travaillé pour à ses
+                client les meilleurs services, et des produits alimentaires de haute qualité.
+                Vous pouvez compter sur nous pour vous livrer votre commande rapidement, sans problème,
+                et à un prix compétitif. Contactez-nous pour en savoir plus à propos de notre activité.
+            </p>
+            <button>Nous contacter</button>
+        </div>
+    </div>
+    <div id="contact" class="blanc">
+        <div id="formulaire">
+            <h1 class="policeA">Contact</h1>
+            <div id="identite">
+                <div id="nom"><input type="text" name="nom" placeholder="Nom" maxlength="100"></div>
+                <div id="email"><input type="email" name="e-mail" placeholder="E-mail"></div>
+            </div>
+            <div id="objet"><input type="text" name="objet" placeholder="Objet"></div>
+            <div id="textarea"><textarea placeholder="Entrez votre message ici"></textarea></div>
+            <div id="bouton"><button>Envoyer</button></div>
+        </div>
+    </div>
+    <div id="map"><div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+        var setting = {"height":528, "zoom":13,"queryString":"Vielleségure, France","place_id":"ChIJl_7Tg9HwVg0R8IFpijpIZeQ","satellite":false,"centerCoord":[43.35500538353769,-0.7038405004905557],"cid":"0xe465483a8a6981f0","lang":"fr","cityUrl":"/france/viellesegure-415503","cityAnchorText":"Carte de Viellesegure, Sud de la France, France","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"373906"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=373906';
+        s.async = true;
+        s.onload = function (e) {
+          window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+      })();</script><a href="https://1map.com/fr/map-embed">1 Map</a></div></div>
+    </div>
+    <footer>
+        <p>©2021 candau.sebastien@laposte.net</p>
+    </footer>
+</body>
+
+</html>

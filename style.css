@@ -1,0 +1,360 @@
+@font-face{
+    font-family: "Cormorant";
+    src: url(font/CormorantGaramond-Light.ttf);
+}
+
+@font-face{
+    font-family: "Raleway";
+    src: url(font/Raleway-VariableFont_wght.ttf);
+}
+
+.burger{
+    display: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    background-image: url(img/burger.png);
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#corps{
+    background-image: url(img/body.png);
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+header{
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    display: inline-block;
+    margin-left: 1em;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:clicked{
+    text-decoration: none;
+}
+
+.policeA{
+    font-family: "Cormorant";
+}
+
+.policeB{
+    font-family: "Raleway";
+}
+
+p{
+    font-family: "Raleway";
+}
+
+#transparent{
+    width: 100%;
+    height: 32em;
+    display: flex;
+    padding-top: 3em;
+}
+
+#bienvenue{
+    margin-right: 5em;
+    margin-left: 5em;
+    position: 0;
+    margin-bottom: 5em;
+    width: 40%;
+    background-color: rgba(255, 255, 254, 0.5);
+    text-align: center;
+}
+
+#bienvenue>h1{
+    font-weight: 500;
+    margin-top: 1.25em;
+    font-size: 5em;
+}
+
+#bienvenue>h3{
+    margin: 0;
+    font-size: 1.5em;
+    font-family: "Raleway";
+    font-weight : normal;
+}
+
+.blanc{
+    background-color: white;
+}
+
+#produits{
+    padding-top: 5em;
+    text-align: center;
+}
+
+#produits_souscat{
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.produit{
+    width: 100%;
+    margin-left: 1em;
+    background-color: rgb(210, 235, 76);
+    
+}
+
+.produit>img{
+    width: 100%;
+}
+
+.produit>.policeA{
+    font-size: 1.75em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2em;
+}
+
+.produit>.policeB{
+    margin-bottom: 2em;
+}
+
+#propos{
+    display: flex;
+    margin-top: 3em;
+}
+
+#propos_gauche{
+    width: 50%;
+}
+
+#propos_gauche>img{
+    width: 100%;
+}
+
+#propos_droite{
+    align-self: center;
+    width: 50%;
+    text-align: center;
+    line-height: 2em;
+}
+
+#propos_droite>p{
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+#propos_droite>.policeA{
+    font-size: 2.5em;
+}
+
+button{
+    width: 10em;
+    border-radius: 0%;
+    border: 0;
+    font-size: 1.25em;
+    height: 2.5em;
+    background-color: black;
+    color: white;
+    transition: background-color 0.6s;
+}
+
+button:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+#contact{
+    margin-top: 3em;
+    width: 100%;
+}
+
+#formulaire{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#identite{
+    display: flex;
+    justify-content: space-between;
+}
+
+#nom{
+    width: 48%;
+}
+
+#nom>input{
+    width: 100%;
+}
+
+#email{
+    width: 48%;}
+
+#email>input{
+    width: 100%;
+}
+
+#objet{
+    width: 100%;
+}
+
+#objet>input{
+    width: 100%;
+}
+
+#textarea{
+    width: 100%;
+}
+
+#textarea>textarea{
+    width: 100%;
+}
+
+input{
+    margin-top: 1.5em;
+    border-radius: 0%;
+    border: 0;
+    border-bottom: solid 2px black;
+    font-size: 1.25em;
+}
+
+input:active{
+    border-radius: 0%;
+}
+
+textarea{
+    font-size: 1.5em;
+    font-family: "Raleway";
+    height: 5em;
+    margin-top: 1.5em;
+    border-radius: 0%;
+    border: 0;
+    border-bottom: solid 2px black;
+    font-size: 1em;
+}
+
+#bouton>button{
+    margin-top: 2em;
+}
+
+#map{
+    margin-top: 2em;
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+}
+
+/* ////////// RESPONSIVE ////////// */
+
+@media(max-width:1024px){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    .burger{
+        display: flex;
+    }
+
+    
+
+    .burger:checked ~ #droite{
+        display: flex;
+        top: 2.75em;
+        position: absolute;
+        left: 0;
+        width: 40%;
+        height: 20em;
+        background-color: black;
+    }
+
+    ul{
+        padding-left: 0;
+        margin-top: 2em;
+        margin-bottom: 0;
+    }
+    
+    li{
+        font-family: "Raleway";
+        color: white;
+        text-align: left;
+        display: list-item;
+        margin-top: 2em;
+        list-style-type: none;
+    }
+
+    #droite{
+        display: none;
+    }
+
+    #propos_gauche{
+        display: none;
+    }
+
+    #produits_souscat{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .produit{
+        margin-top: 1em;
+        margin-left: 0;
+    }
+
+    #propos_droite{
+        width: 100%;
+    }
+
+    #formulaire{
+        width: 100%;
+    }
+
+    #bienvenue{
+        margin-left: 2em;
+        margin-right: 2em;
+        width: 100%;
+    }
+
+}
+
+@media(max-width:425px){
+    #bienvenue>h1{
+        font-size: 2em;
+    }
+
+    #bienvenue>h3{
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
